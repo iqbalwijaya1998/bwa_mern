@@ -2,6 +2,7 @@ import React from "react";
 
 import Button from "elements/Button";
 import BrandIcon from "parts/IconText";
+import Logo from "assets/images/icons/logo.svg";
 
 export default function Header(props) {
   const getNavLinkClass = (path) => {
@@ -12,6 +13,7 @@ export default function Header(props) {
     <header className="spacing-sm">
       <div className="container">
         <nav className="navbar navbar-expand-lg navbar-light">
+          <img src={Logo} alt="" width="32" height="32" />
           <BrandIcon />
           <div className="collapse navbar-collapse">
             <ul className="navbar-nav ml-auto">
