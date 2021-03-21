@@ -39,7 +39,7 @@ export default function Categories({ data }) {
                       <Button
                         type="link"
                         href={`/properties/${item._id}`}
-                        className="stretched-link d-block text-gray-800"
+                        className="stretched-link d-block text-gray-900"
                       >
                         <h5 className="h4" style={{ fontSize: 18 }}>
                           {item.name}
