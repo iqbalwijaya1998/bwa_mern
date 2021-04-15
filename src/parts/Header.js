@@ -3,19 +3,33 @@ import Fade from "react-reveal/Fade";
 
 import Button from "elements/Button";
 import BrandIcon from "parts/IconText";
-import Logo from "assets/images/icons/logo.svg";
 
 export default function Header(props) {
   const getNavLinkClass = (path) => {
     return props.location.pathname === path ? " active" : "";
   };
 
+  if (props.isCentered)
+    return (
+      <Fade>
+        <header className="spacing-sm">
+          <div className="container">
+            <nav className="navbar navbar-expand-lg navbar-light">
+              <Button className="brand-text-icon mx-auto" href="" type="link">
+                My<span className="text-gray-900">Trip.</span>
+              </Button>
+            </nav>
+          </div>
+        </header>
+      </Fade>
+    );
+
   return (
     <Fade>
       <header className="spacing-sm">
         <div className="container">
           <nav className="navbar navbar-expand-lg navbar-light">
-            <img src={Logo} alt="" width="32" height="32" />
+            {/* <img src="/images/logo.svg" alt="" width="32" height="32" /> */}
             <BrandIcon />
             <div className="collapse navbar-collapse">
               <ul className="navbar-nav ml-auto">

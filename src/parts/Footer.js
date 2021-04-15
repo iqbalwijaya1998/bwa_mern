@@ -4,8 +4,6 @@ import Fade from "react-reveal/Fade";
 import Button from "elements/Button";
 import IconText from "parts/IconText";
 
-import Logo from "assets/images/icons/logo.svg";
-
 export default function Footer() {
   return (
     <Fade bottom>
@@ -13,11 +11,10 @@ export default function Footer() {
         <div className="container">
           <div className="row">
             <div className="col-auto" style={{ width: 350 }}>
-              <img src={Logo} alt="" width="25" height="25" />
+              {/* <img src="/images/logo.svg" alt="" width="25" height="25" /> */}
               <IconText />
               <p className="brand-tagline">
-                We have a great hotels, apartments, and villas for the best your
-                holiday experience in Bali Island
+                We kaboom your beauty holiday instantly and memorable.
               </p>
             </div>
             <div className="col-auto mr-5" style={{ marginLeft: 50 }}>
@@ -69,7 +66,7 @@ export default function Footer() {
                     type="link"
                     href="mailto:support@balisland.com"
                   >
-                    support@balisland.com
+                    support@mytrip.com
                   </Button>
                 </li>
                 <li className="list-group-item">
@@ -85,7 +82,7 @@ export default function Footer() {
           </div>
           <div className="row">
             <div className="col text-center copyrights">
-              Copyright 2019 • All Right Reserved • Bali Island
+              Copyright 2019 • All Right Reserved • My Trip.
             </div>
           </div>
         </div>

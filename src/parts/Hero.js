@@ -3,9 +3,6 @@ import Fade from "react-reveal/Fade";
 
 import ImageHero from "assets/images/img-hero.jpg";
 import ImageHero_ from "assets/images/frame-img-hero.jpg";
-import IconCities from "assets/images/icons/icon-cities.svg";
-import IconTraveler from "assets/images/icons/icon-traveler.svg";
-import IconTreasure from "assets/images/icons/icon-treasure.svg";
 
 import Button from "elements/Button";
 
@@ -26,14 +23,14 @@ export default function Hero(props) {
           <div className="col-auto pr-5" style={{ width: 570, marginTop: 50 }}>
             <h1 className="font-weight-bold line-height-1 mb-3">
               Forget All Problems, <br />
-              Start Holiday in Bali
+              Start Your Trip
             </h1>
             <p
               className="mb-4 font-weight-light text-gray-500 w-75"
               style={{ lineHeight: "170%" }}
             >
-              The best island in Indonesia. It's more than an island; <br />
-              It's paradise, a mood, an aspiration, a tropical state of mind.
+              We provide what you need to enjoy your holiday with family. Time
+              to make another memorable moments.
             </p>
             <Button
               className="btn px-5"
@@ -49,7 +46,7 @@ export default function Hero(props) {
                 <img
                   width="36"
                   height="36"
-                  src={IconTraveler}
+                  src="/images/icon-traveler.svg"
                   alt={`${props.data.travelers} Travelers`}
                 />
                 <h6 className="mt-3">
@@ -63,7 +60,7 @@ export default function Hero(props) {
                 <img
                   width="36"
                   height="36"
-                  src={IconTreasure}
+                  src="/images/icon-treasure.svg"
                   alt={`${props.data.treasures} Treasures`}
                 />
                 <h6 className="mt-3">
@@ -77,7 +74,7 @@ export default function Hero(props) {
                 <img
                   width="36"
                   height="36"
-                  src={IconCities}
+                  src="/images/icon-cities.svg"
                   alt={`${props.data.cities} Cities`}
                 />
                 <h6 className="mt-3">
